@@ -92,7 +92,7 @@ main nav div p {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: auto;
 }
 #first {
   flex: 1;
