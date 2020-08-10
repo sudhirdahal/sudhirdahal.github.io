@@ -193,7 +193,7 @@ main nav div p {
   border: 1px solid black;
   max-height: fit-content;
 }
-
+/* */
 #third {
   flex: 1;
   display: flex;
