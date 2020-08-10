@@ -114,7 +114,7 @@ main {
 }
 nav {
   width: 120px;
-  height: 70%;
+  height: 18%;
   background-color: lightskyblue;
   margin-right: 10px;
   margin-bottom: 25px;
@@ -345,7 +345,22 @@ input[type=submit]{
 /*
 --------------------------------------------------------  */
 @media (max-width: 500px) {
+  #body{
+    display: auto;
+  }
   #pics{
     display: none;
+  }
+  #name,#logo{
+    font-size: 1.2em;
+  }
+  #first_main,#second_main,#third_main,#two-four,#four-four,#six-four,
+  #instagram, #youtube  {
+    display: none;
+  }
+  #forForm{
+    margin-left: 10px;
+    margin-right:3px;
+    flex: 0.6;
   }
 }
