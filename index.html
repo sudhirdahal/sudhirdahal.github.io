@@ -9,21 +9,41 @@
   </head>
 
   <body>
-    <div id="topmost">Dress for the family</div>
+    <div id="topmost">
+       <span>Dress for the family</span>   <!--EXP-->
+    </div>
     <header>
       <div id="logo">
-        <i class="fas fa-horse-head"></i>
+          <i class="fas fa-horse-head"></i>        
       </div>
       <div id="name">
-        <p>WOW</p>
+        <span>WOW</span>
       </div>
-      <img src="images/4.jpg" alt="image4" style="width:250px;height:150px" />
-      <img src="images/5.jpg" alt="image5" style="width:250px;height:150px" />
-      <img src="images/8.jpg" alt="image8" style="width:250px;height:150px" />
+      <div id="pics">   <!--EXP-->
+        <img src="images/4.jpg" alt="image4" style="width:250px;height:150px" />
+        <img src="images/5.jpg" alt="image5" style="width:250px;height:150px" />
+        <img src="images/8.jpg" alt="image8" style="width:250px;height:150px" />
+      </div>
+
       <div class="right">
-        <input />
-        <button id="button1"><i class="fas fa-search"></i></button>
-        <button id="button2"><i class="fas fa-user-circle"></i>SIGN IN</button>
+       <span> <a href="contact.html">Contact Us</a> </span>
+       <div id="searchForm">
+        <form 
+        id="searchForm" 
+        name="searchForm" 
+        method="POST" 
+        action="https://formspree.io/xwkrzpvn"
+        >
+          <input 
+          id="search" 
+          name="search" 
+          type="search"
+          required
+          >
+          <button id="button1"><i class="fas fa-search"></i></button>
+        </form>
+       <!--  <button id="button1"><i class="fas fa-search"></i></button> -->
+       <!--  <button id="button2"><i class="fas fa-user-circle"></i>SIGN IN</button> -->
       </div>
     </header>
     <main>
