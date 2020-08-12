@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WEB222 Store</title>
+        <link rel="stylesheet" href="style.css" type="text/css" /> 
+        <script src="https://kit.fontawesome.com/f52ce3f6ba.js" crossorigin="anonymous"></script>
+    </head>
+ 
+ <body>
+     <div id="topmost">
+        <span>Dress for the family</span>
+     </div>
+     <header>
+        <div id="logo">
+            <i class="fas fa-horse-head"></i>        
+        </div>
+        <div id="name">
+          <span>WOW</span>
+        </div>
+         <div id="pics">
+            <img src="images/4.jpg" alt="image4" style="width:250px;height:150px"/>
+            <img src="images/5.jpg" alt="image5" style="width:250px;height:150px"/>
+            <img src="images/8.jpg" alt="image8" style="width:250px;height:150px" />
+         </div>
+         <div class="right">
+            <span> <a href="index.html">HOME</a> </span>
+     <!--       <div id="searchForm1"> this div not needed-->
+             <form 
+             id="searchForm" 
+             name="searchForm" 
+             method="POST" 
+             action="https://formspree.io/xwkrzpvn"
+             >
+               <input 
+               id="search" 
+               name="search" 
+               type="search"
+               required
+               >
+               <button id="button1"><i class="fas fa-search"></i></button>
+             </form>
+         </div>
+        </header>
+     <h2>Fillup Form</h2>
+     <div class="grid-container">
+        <form 
+        id="newForm" 
+        name="mainForm" 
+        method="POST" 
+        action="https://httpbin.org/post">
+        <div class="row">
+            <div class="col-narrow">
+                <label for="nameform">Name</label>
+            </div>
+            <div class="col-wide">
+                <input id="nameform" 
+                name="name"
+                type="text"
+                tabindex="1"
+                autofocus
+                spellcheck="false"
+                required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-narrow">
+                 <label for="emailAddress">Email</label>
+            </div>
+            <div class="col-wide">
+                <input 
+                id="emailAddress"
+                name="emailAddress"
+                type="email"
+                size="20"
+                tabindex="2"
+                spellcheck="false"
+                required>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-narrow">
+                <label for="address">Address</label>
+            </div>
+            <div class="col-wide">
+                <input
+                id="address"
+                name="address"
+                type="text"
+                size="2"
+                tabindex="3"
+                spellcheck="false"
+                required>
+            </div>         
+        </div>
+        
+        <div class="row">
+            <div class="col-narrow">
+                <label for="city">City</label>
+            </div>
+            <div class="col-wide">
+                <input
+                    id="city"
+                    name="city"
+                    tabindex="4"
+                    required
+                    
+                    list="cityList">
+                    <datalist id="cityList">
+                        <option value="Toronto"></option>
+                        <option value="Montreal"></option>
+                        <option value="Ottawa"></option>
+                        <option value="Quebec City"></option>
+                        <option value="Vancouver"></option>
+                        <option value="Alberta"></option>
+                        <option value="Windsor"></option>
+                        <option value="Edmonton"></option>
+                    </datalist>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-narrow">
+                <label  for="postalCode">Postal Code</label>
+            </div>
+            <div class="col-wide">
+                <input 
+            id="postalCode"
+            name="postalCode"
+            type="text"
+            required
+            tabindex="5"
+            pattern="^[A-Za-z]\d[A-Za-z][ ]?\d[A-Za-z]\d$">
+            </div>
+        </div>
+        
+
+        <input type="radio" name="radio" id="question" value="Question">
+        <label for="question">Question</label>
+        <input type="radio" name="radio" id="comment" value="Comment">
+        <label for="comment">Comment</label>
+        <input type="radio" name="radio" id="orderProblem" value="Order Problem">
+        <label for="orderProblem">Order Problem</label>
+       <!--  <label for="radioOpt"></label> -->
+       <div class="row">
+           <div class="col-narrow">
+                <label for="message">Message</label>
+           </div>
+        
+        <textarea id="message" name="message" rows="7" cols="40"></textarea>
+        <input id="myName" name="myName" type="hidden" value="Sudhir Dahal">
+       </div>
+       <div class="row">
+            <!-- <div class="col-narrow"></div>
+            <div class="col-wide"> -->
+                <input
+                id="submit-btn"
+                name="submit"
+                type="submit"
+                value="submit">
+            <!-- </div> -->
+       </div>       
+        </form>
+    </div>
+     <!-- </div> -->
+
+
+     <footer>
+        <div class="social-media">
+          <div>
+            <i class="fab fa-twitter-square"></i>
+          </div>
+          <div>
+            <i class="fab fa-facebook-square"></i>
+          </div>
+          <div id="instagram">
+            <i class="fab fa-instagram-square"></i>
+          </div>
+          <div id="youtube">
+            <i class="fab fa-youtube-square"></i>
+          </div>
+        </div>
+        <div id="center">
+          <p class="center">&copy; 2020 WOW</p>
+        </div>
+        <div id="forForm">
+          <form 
+          id="subscribe" 
+          name="subscribe" 
+          method="POST" 
+          action="https://formspree.io/xwkrzpvn"
+          >
+            <label for="email">EMAIL</label>
+            <input 
+            id="email" 
+            name="email" 
+            type="email"
+            >
+            <div>
+              <input
+              id="subscribe-btn"
+              name="subscribe-btn"
+              type="submit"
+              value="Subscribe"
+              >
+            </div>
+  
+          </form>
+        </div>
+      </footer>
+
+     <script src="script.js"></script>
+ </body>
+</html>
+        
+    

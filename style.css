@@ -292,7 +292,7 @@ form{
   /* background-color: honeydew; */
 }
 
-input[type=email], input[type=submit] {
+input[type=email], #subscribe-btn {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
@@ -360,7 +360,7 @@ input[type=submit]{
 
 /*
 --------------------------------------------------------  */
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   #body{
     display: auto;
   }
@@ -378,5 +378,106 @@ input[type=submit]{
     margin-left: 10px;
     margin-right:3px;
     flex: 0.6;
+  }
+}
+
+
+
+/*-----------------------------------------------------------*/
+/*.grid-container{
+  flex: 1;  
+  display: grid;
+  border: 1px solid red; 
+  grid-template-areas:'area1 area1 area2 area2';
+  margin-left: 12px;
+  max-width: 650px;
+  min-width: 325px;
+  /* grid-template-columns: 1fr 2fr;
+  
+  
+}
+
+#name1{
+  grid-area: area1;
+}
+
+#email1{
+  grid-area: area2;
+}
+
+.grid-container > div{
+  margin-left: 5px;
+}
+*/
+
+.grid-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input[type=email], [type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  max-width: 900px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.col-wide {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.col-narrow {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+#city{
+  width: 98%;
+  padding-top: 8.5px;
+  padding-bottom: 8.5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-self: center;
+}
+
+#cityList{
+  align-self: center;
+  font-size: 10em;
+}
+
+#submit-btn {
+   
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* #message{
+  width: 50%;
+} */
+
+@media screen and (max-width: 600px) {
+  .col-narrow, .col-wide, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
 }
