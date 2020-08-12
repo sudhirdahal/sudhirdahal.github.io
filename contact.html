@@ -138,20 +138,51 @@
         </div>
         
 
-        <input type="radio" name="radio" id="question" value="Question">
-        <label for="question">Question</label>
-        <input type="radio" name="radio" id="comment" value="Comment">
-        <label for="comment">Comment</label>
-        <input type="radio" name="radio" id="orderProblem" value="Order Problem">
+        
+       <!--  <div class="col-narrow"> -->
+            <input type="radio" name="radio" id="question" value="Question" onclick="openForm()">
+            <label for="question">Question</label>  
+<!--         </div>
+        <div class="col-narrow"> -->
+            <input type="radio" name="radio" id="comment" value="Comment" onclick="openForm()">
+            <label for="comment">Comment</label>
+        <!-- </div> -->
+        
+        <input 
+        type="radio" 
+        name="radio" 
+        id="orderProblem" 
+        value="Order Problem"
+        onclick="openForm()"
+        >
         <label for="orderProblem">Order Problem</label>
-       <!--  <label for="radioOpt"></label> -->
+
+
+
+        <div class="row" id="myForm">
+            <!-- <form action="https://httpbin.org/post" class="form-container"> -->
+             <!--  <h1>Login</h1> -->
+          
+              <label for="orderNo"><b>Order Number</b></label>
+              <input type="text" name="orderNo" id="orderNo" required>
+          
+          
+              <button type="submit" class="btn">Submit</button>
+              <!-- <button type="button" class="btn cancel" id="toClose">Close</button> -->
+            <!-- </form> -->
+        </div>
+
+
+
+        <!--  <label for="radioOpt"></label> -->
        <div class="row">
            <div class="col-narrow">
                 <label for="message">Message</label>
            </div>
-        
-        <textarea id="message" name="message" rows="7" cols="40"></textarea>
-        <input id="myName" name="myName" type="hidden" value="Sudhir Dahal">
+           <div class="col-wide">
+                <textarea id="message" name="message" rows="7" cols="40"></textarea>
+           </div>
+           <input id="myName" name="myName" type="hidden" value="Sudhir Dahal">
        </div>
        <div class="row">
             <!-- <div class="col-narrow"></div>
@@ -211,8 +242,14 @@
           </form>
         </div>
       </footer>
-
-     <script src="script.js"></script>
+    <script>
+        function openForm(){
+            let checkYes = document.querySelector('#orderProblem');
+            let displayYN = document.querySelector('#myForm');
+            displayYN.style.display = checkYes.checked ? "block" : "none";
+        }
+    </script>
+    <script src="script.js"></script>
  </body>
 </html>
         
