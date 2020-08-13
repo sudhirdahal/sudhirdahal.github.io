@@ -1,4 +1,3 @@
-/* Add any JavaScript you need to this file. */
 (function() {
   function setupMenuHandlers() {
     var menMenu = document.querySelector('#option1');
@@ -57,3 +56,7 @@
   }
   window.onload = setupMenuHandlers;
 })();
+
+
+
+
